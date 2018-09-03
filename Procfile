@@ -1,1 +1,1 @@
-web: python YoutuBot.py
+bot: python YoutuBot.py
