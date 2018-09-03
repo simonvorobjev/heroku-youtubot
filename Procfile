@@ -1,1 +1,1 @@
-web: python YoutuBot.py
+worker: python YoutuBot.py
