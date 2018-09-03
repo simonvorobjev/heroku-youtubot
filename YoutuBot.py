@@ -2,6 +2,10 @@ token = "695344585:AAGcqOuvRDaAUHYCMWwno4W5tz35-UTWgfg"
 
 import requests  
 from bs4 import BeautifulSoup
+from flask import Flask
+import os
+
+server = Flask(__name__)
 
 class BotHandler:
 
@@ -94,6 +98,8 @@ def main():
 
 if __name__ == '__main__':  
     try:
+        server.run(host="0.0.0.0", port=os.environ.get('PORT', 5000))
+        server = Flask(__name__)
         main()
     except KeyboardInterrupt:
         exit()
