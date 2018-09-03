@@ -1,1 +1,1 @@
-bot: python YoutuBot.py
+web: python YoutuBot.py runserver 0.0.0.0:$PORT
