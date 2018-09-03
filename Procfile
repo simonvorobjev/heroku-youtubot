@@ -1,1 +1,1 @@
-web: python YoutuBot.py --port=$PORT
+web: python YoutuBot.py -b 0.0.0.0:$PORT
